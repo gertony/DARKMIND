@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "908754814624",
+    "project_id": "darkmind-82c91",
+    "storage_bucket": "darkmind-82c91.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908754814624:android:ba334152660c307eac6bc5",
+        "android_client_info": {
+          "package_name": "com.example.darkmind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgKZ4wopmwhNZE3Ck9wAICr5oj_3SEyZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

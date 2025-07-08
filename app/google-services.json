@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "908754814624",
+    "project_id": "darkmind-82c91",
+    "storage_bucket": "darkmind-82c91.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908754814624:android:ba334152660c307eac6bc5",
+        "android_client_info": {
+          "package_name": "com.example.darkmind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908754814624-iub4bo0bqlqp3jmskcuhkmcmqtssn2gr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.darkmind",
+            "certificate_hash": "c811a4e8f52912f4492e6458e583d6c519c94e32"
+          }
+        },
+        {
+          "client_id": "908754814624-nrdfdbnfrim4q8tb77b7vmmu3eo8i9bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgKZ4wopmwhNZE3Ck9wAICr5oj_3SEyZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908754814624-nrdfdbnfrim4q8tb77b7vmmu3eo8i9bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

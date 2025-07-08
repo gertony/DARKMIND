@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="62dp" />
+
+        <ImageView
+            android:src="@drawable/logo_invert"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:hint="¿Cómo te sientes hoy?"
+            android:backgroundTint="#888"
+            android:textColor="#fff"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:gravity="top|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Selecciona tu emoción:"
+            android:textColor="#ccc"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/emotionContainer"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/emotion1"
+                android:src="@drawable/sentiment_very_dissatisfied_24px"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                app:tint="#888"
+                android:contentDescription="Muy triste" />
+
+            <ImageView
+                android:id="@+id/emotion2"
+                android:src="@drawable/sentiment_dissatisfied_24px"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                app:tint="#888"
+                android:contentDescription="Triste" />
+
+            <ImageView
+                android:id="@+id/emotion3"
+                android:src="@drawable/sentiment_neutral_24px"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                app:tint="#888"
+                android:contentDescription="Neutral" />
+
+            <ImageView
+                android:id="@+id/emotion4"
+                android:src="@drawable/sentiment_satisfied_24px"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                app:tint="#888"
+                android:contentDescription="Feliz" />
+
+            <ImageView
+                android:id="@+id/emotion5"
+                android:src="@drawable/sentiment_very_satisfied_24px"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                app:tint="#888"
+                android:contentDescription="Muy feliz" />
+        </LinearLayout>
+
+        <TextView
+            android:text="¿Dónde estabas o qué hacías?"
+            android:textColor="#ccc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#888"
+            android:popupBackground="#222"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            style="@style/MySpinnerStyle"/>
+
+        <EditText
+            android:id="@+id/etTrigger"
+            android:hint="¿Qué lo desencadenó?"
+            android:backgroundTint="#888"
+            android:textColor="#fff"
+            android:textColorHint="#AAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:text="¿Quieres guardar un recuerdo visual?"
+            android:textColor="#ccc"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:text="Tomar o elegir una foto"
+            android:textColor="#fff"
+            android:backgroundTint="#555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Vista previa de imagen"
+            android:background="#333" />
+
+        <TextView
+            android:text="¿Deseas grabar un audio para contarlo?"
+            android:textColor="#ccc"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAddAudio"
+            android:text="Grabar audio"
+            android:textColor="#fff"
+            android:backgroundTint="#555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <!-- ✅ Visible por defecto para pruebas -->
+        <TextView
+            android:id="@+id/tvAudioPreview"
+            android:text="Sin audio grabado"
+            android:textColor="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#222"
+            android:padding="8dp"
+            android:visibility="visible" />
+        <LinearLayout
+            android:id="@+id/audioControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnStopRecording"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detener" />
+
+            <Button
+                android:id="@+id/btnPlayAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reproducir"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/btnDeleteAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borrar"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Guardar entrada"
+            android:textColor="#fff"
+            android:backgroundTint="#1E88E5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

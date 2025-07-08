@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DarkMind</string>
+    <string name="register_text">¿No tienes cuenta? <u>Regístrate</u></string>
+
+</resources>

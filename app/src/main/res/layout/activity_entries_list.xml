@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título de la pantalla -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="98dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Mis Entradas"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal"/> <!-- Centrar título -->
+
+    <!-- Botón de Sincronizar -->
+    <Button
+        android:id="@+id/btnSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sincronizar"
+        style="@style/BlackRectangularButton"
+        android:layout_marginBottom="16dp"/> <!-- Margen inferior para separación -->
+
+    <!-- Lista de Entradas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEntries"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

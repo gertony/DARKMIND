@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:text="Bienvenido"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnNewEntry"
+        android:text="Nueva entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BlackRectangularButton"/> <!-- Estilo aplicado aquí -->
+    <Button
+        android:id="@+id/btnEntriesList"
+        android:text="Ver Entradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BlackRectangularButton"/> <!-- Estilo aplicado aquí -->
+    <Button
+        android:id="@+id/btnEmotionsSummary"
+        android:text="Ver Resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BlackRectangularButton"/> <!-- Estilo aplicado aquí -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="151dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:text="Cerrar sesión"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BlackRectangularButton"/> <!-- Estilo aplicado aquí, atributos de color duplicados eliminados -->
+
+</LinearLayout>
